@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_footer_footer_menus",
+  "info": {
+    "name": "FooterMenu",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "pages": {
+      "collection": "page"
+    }
+  }
+}

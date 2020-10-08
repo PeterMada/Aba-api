@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_dynamic_component_therapists",
+  "info": {
+    "name": "Therapists",
+    "icon": "child"
+  },
+  "options": {},
+  "attributes": {
+    "HasTherapistsList": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "GraphicTitle": {
+      "type": "string",
+      "required": true
+    },
+    "TextUnderTitle": {
+      "type": "text",
+      "maxLength": 400
+    }
+  }
+}

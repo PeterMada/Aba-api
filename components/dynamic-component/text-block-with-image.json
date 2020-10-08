@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_dynamic_component_text_block_with_images",
+  "info": {
+    "name": "TextBlockWithImage",
+    "icon": "book-open"
+  },
+  "options": {},
+  "attributes": {
+    "text_block_with_images": {
+      "collection": "text-block-with-image"
+    }
+  }
+}

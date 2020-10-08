@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "text_on_images",
+  "info": {
+    "name": "TextOnImage"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Perex": {
+      "type": "text"
+    },
+    "Text": {
+      "type": "text",
+      "required": true
+    },
+    "BackgroundImg": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_header_menus",
+  "info": {
+    "name": "Menu",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "SubmenuPages": {
+      "collection": "page"
+    },
+    "MainPage": {
+      "model": "page"
+    }
+  }
+}

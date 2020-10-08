@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "TextWithImage",
+  "info": {
+    "name": "Text block with Image"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Perex": {
+      "type": "string"
+    },
+    "Text": {
+      "type": "text",
+      "required": true
+    },
+    "Img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

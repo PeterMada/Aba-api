@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_dynamic_component_dynamic_components",
+  "info": {
+    "name": "News/Therapist",
+    "icon": "atlas"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "GraphicTitle": {
+      "type": "string",
+      "required": true
+    },
+    "TextUnderTitle": {
+      "type": "text",
+      "maxLength": 400
+    },
+    "HasNewsList": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "HasTherapistList": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "IsLongList": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

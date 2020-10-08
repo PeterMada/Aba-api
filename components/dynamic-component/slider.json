@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_dynamic_component_sliders",
+  "info": {
+    "name": "Slider",
+    "icon": "images"
+  },
+  "options": {},
+  "attributes": {
+    "sliders": {
+      "collection": "slider"
+    }
+  }
+}

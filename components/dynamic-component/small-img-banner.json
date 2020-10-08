@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_dynamic_component_small_img_banners",
+  "info": {
+    "name": "SmallImgBanner",
+    "icon": "grip-lines"
+  },
+  "options": {},
+  "attributes": {
+    "SmallImgTitle": {
+      "type": "string"
+    },
+    "SmallImgBackgroundImg": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

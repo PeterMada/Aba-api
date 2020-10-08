@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_therapist_components_text_tabs",
+  "info": {
+    "name": "TextTab",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Text": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

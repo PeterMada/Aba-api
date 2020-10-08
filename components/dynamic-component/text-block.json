@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_dynamic_component_text_blocks",
+  "info": {
+    "name": "TextBlock",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "text_blocks": {
+      "collection": "text-block"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "menu_headers",
+  "info": {
+    "name": "MenuHeader"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Menu": {
+      "type": "component",
+      "repeatable": true,
+      "component": "header.menu"
+    }
+  }
+}

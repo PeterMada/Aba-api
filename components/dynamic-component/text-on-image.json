@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_dynamic_component_text_on_images",
+  "info": {
+    "name": "TextOnImage",
+    "icon": "band-aid"
+  },
+  "options": {},
+  "attributes": {
+    "text_on_images": {
+      "collection": "text-on-image"
+    }
+  }
+}

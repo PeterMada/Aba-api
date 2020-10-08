@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news",
+  "info": {
+    "name": "New"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Url": {
+      "type": "uid",
+      "targetField": "Title",
+      "required": true
+    },
+    "Perex": {
+      "type": "text"
+    },
+    "Text": {
+      "type": "richtext",
+      "required": true
+    },
+    "MainImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "ImgGallery": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "news_tags": {
+      "via": "news",
+      "collection": "news-tag"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news_tags",
+  "info": {
+    "name": "NewsTag"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "news": {
+      "collection": "new",
+      "via": "news_tags",
+      "dominant": true
+    }
+  }
+}

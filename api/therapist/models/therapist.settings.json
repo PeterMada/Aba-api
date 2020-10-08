@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "therapists",
+  "info": {
+    "name": "Therapist"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Url": {
+      "type": "uid",
+      "targetField": "Name"
+    },
+    "Perex": {
+      "type": "text",
+      "required": true
+    },
+    "TherapistImg": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "TabText": {
+      "type": "component",
+      "repeatable": true,
+      "component": "therapist-components.text-tab"
+    },
+    "social_media_sites": {
+      "collection": "social-media-site"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "text_on_sliders",
+  "info": {
+    "name": "TextOnSlider"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Text": {
+      "type": "text",
+      "required": true
+    },
+    "TextUnder": {
+      "type": "string"
+    },
+    "ShowTitle": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

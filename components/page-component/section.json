@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_page_component_sections",
+  "info": {
+    "name": "Section",
+    "icon": "file-import"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "GraphicTitle": {
+      "type": "string"
+    },
+    "TextUnderTitle": {
+      "type": "text"
+    },
+    "sliders": {
+      "collection": "slider"
+    },
+    "text_blocks": {
+      "collection": "text-block"
+    }
+  }
+}
