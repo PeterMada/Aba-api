@@ -1,5 +1,4 @@
 module.exports = ({ env }) => ({
-    // ...
     upload: {
         provider: 'cloudinary',
         providerOptions: {
@@ -8,5 +7,4 @@ module.exports = ({ env }) => ({
             api_secret: env('_UYV3gcmE3eR1EEJ_2glVpZEP5Y'),
         },
     },
-    // ...
 });
