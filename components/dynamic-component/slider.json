@@ -2,12 +2,23 @@
   "collectionName": "components_dynamic_component_sliders",
   "info": {
     "name": "Slider",
-    "icon": "images"
+    "icon": "images",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "sliders": {
       "collection": "slider"
+    },
+    "ArrowColor": {
+      "type": "enumeration",
+      "enum": [
+        "White",
+        "Black",
+        "Blue"
+      ],
+      "default": "White",
+      "required": true
     }
   }
 }
