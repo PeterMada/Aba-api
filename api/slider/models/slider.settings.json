@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "sliders",
   "info": {
-    "name": "Slider"
+    "name": "Slider",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "Title": {
@@ -22,8 +24,18 @@
       "plugin": "upload",
       "required": true
     },
+    "ControlsColor": {
+      "type": "enumeration",
+      "enum": [
+        "White",
+        "Black",
+        "Blue"
+      ],
+      "required": true,
+      "default": "White"
+    },
     "Text": {
-      "type": "string",
+      "type": "richtext",
       "required": true
     }
   }
