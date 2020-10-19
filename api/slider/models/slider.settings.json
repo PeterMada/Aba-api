@@ -31,7 +31,7 @@
         "Black",
         "Blue"
       ],
-      "required": true,
+      "required": false,
       "default": "White"
     },
     "Text": {
