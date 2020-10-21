@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "TextWithImage",
   "info": {
-    "name": "Text block with Image"
+    "name": "Text block with Image",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "Title": {
@@ -16,10 +18,6 @@
     "Perex": {
       "type": "string"
     },
-    "Text": {
-      "type": "text",
-      "required": true
-    },
     "Img": {
       "model": "file",
       "via": "related",
@@ -27,6 +25,10 @@
         "images"
       ],
       "plugin": "upload",
+      "required": true
+    },
+    "Text": {
+      "type": "richtext",
       "required": true
     }
   }
