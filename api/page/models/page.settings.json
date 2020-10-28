@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "pages",
   "info": {
-    "name": "Page"
+    "name": "Page",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "Title": {
@@ -31,7 +33,8 @@
         "dynamic-component.text-on-image",
         "dynamic-component.text-on-slider",
         "dynamic-component.text-with-photo-effect",
-        "dynamic-component.small-img-banner"
+        "dynamic-component.small-img-banner",
+        "dynamic-component.small-img-banner-with-text"
       ]
     },
     "TitleInMenu": {
