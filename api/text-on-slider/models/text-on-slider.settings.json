@@ -2,19 +2,17 @@
   "kind": "collectionType",
   "collectionName": "text_on_sliders",
   "info": {
-    "name": "TextOnSlider"
+    "name": "TextOnSlider",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "Title": {
       "type": "string"
-    },
-    "Text": {
-      "type": "text",
-      "required": true
     },
     "TextUnder": {
       "type": "string"
@@ -22,6 +20,10 @@
     "ShowTitle": {
       "type": "boolean",
       "default": false,
+      "required": true
+    },
+    "Text": {
+      "type": "richtext",
       "required": true
     }
   }

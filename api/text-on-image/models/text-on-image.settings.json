@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "text_on_images",
   "info": {
-    "name": "TextOnImage"
+    "name": "TextOnImage",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "Title": {
@@ -16,10 +18,6 @@
     "Perex": {
       "type": "text"
     },
-    "Text": {
-      "type": "text",
-      "required": true
-    },
     "BackgroundImg": {
       "model": "file",
       "via": "related",
@@ -28,6 +26,9 @@
       ],
       "plugin": "upload",
       "required": true
+    },
+    "Text": {
+      "type": "richtext"
     }
   }
 }

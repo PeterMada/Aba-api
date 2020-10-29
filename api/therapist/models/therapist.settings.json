@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "therapists",
   "info": {
-    "name": "Therapist"
+    "name": "Therapist",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "Name": {
@@ -16,7 +18,8 @@
     },
     "Url": {
       "type": "uid",
-      "targetField": "Name"
+      "targetField": "Name",
+      "required": true
     },
     "Perex": {
       "type": "text",
@@ -38,6 +41,12 @@
     },
     "social_media_sites": {
       "collection": "social-media-site"
+    },
+    "TitleBefore": {
+      "type": "string"
+    },
+    "TitleAfter": {
+      "type": "string"
     }
   }
 }
