@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "text_blocks",
   "info": {
-    "name": "Text Block"
+    "name": "Text Block",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "Title": {
@@ -19,6 +21,15 @@
     "Text": {
       "type": "richtext",
       "required": true
+    },
+    "ButtonText": {
+      "type": "string"
+    },
+    "ExternalUrl": {
+      "type": "string"
+    },
+    "PageTarget": {
+      "model": "page"
     }
   }
 }

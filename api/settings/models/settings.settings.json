@@ -2,11 +2,13 @@
   "kind": "singleType",
   "collectionName": "settings",
   "info": {
-    "name": "Settings"
+    "name": "Settings",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "SiteLogo": {

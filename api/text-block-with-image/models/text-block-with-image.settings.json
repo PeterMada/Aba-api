@@ -30,6 +30,15 @@
     "Text": {
       "type": "richtext",
       "required": true
+    },
+    "ButtonText": {
+      "type": "string"
+    },
+    "PageTarget": {
+      "model": "page"
+    },
+    "ExternalUrl": {
+      "type": "string"
     }
   }
 }

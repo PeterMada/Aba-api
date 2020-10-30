@@ -29,6 +29,15 @@
     },
     "Text": {
       "type": "richtext"
+    },
+    "PageTarget": {
+      "model": "page"
+    },
+    "ButtonText": {
+      "type": "string"
+    },
+    "ExternalUrl": {
+      "type": "string"
     }
   }
 }
