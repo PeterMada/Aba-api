@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_dynamic_component_nice_titles",
+  "info": {
+    "name": "NiceTitle",
+    "icon": "broadcast-tower",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "GraphicTitle": {
+      "type": "string"
+    },
+    "TextUnderTitle": {
+      "type": "richtext"
+    }
+  }
+}

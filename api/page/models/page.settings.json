@@ -34,7 +34,8 @@
         "dynamic-component.text-on-slider",
         "dynamic-component.text-with-photo-effect",
         "dynamic-component.small-img-banner",
-        "dynamic-component.small-img-banner-with-text"
+        "dynamic-component.small-img-banner-with-text",
+        "dynamic-component.nice-title"
       ]
     },
     "TitleInMenu": {

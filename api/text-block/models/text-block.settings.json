@@ -30,6 +30,11 @@
     },
     "PageTarget": {
       "model": "page"
+    },
+    "BackgroundColor": {
+      "type": "string",
+      "default": "#FFFFFF",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
     }
   }
 }
