@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "emails",
+  "info": {
+    "name": "Email",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Jmeno": {
+      "type": "string",
+      "required": true,
+      "maxLength": 500
+    },
+    "Text": {
+      "type": "text",
+      "required": true,
+      "maxLength": 1500
+    },
+    "therapist": {
+      "model": "therapist"
+    },
+    "Email": {
+      "type": "string",
+      "required": true
+    },
+    "Interest": {
+      "type": "enumeration",
+      "enum": [
+        "Terapie",
+        "Supervize",
+        "Jine"
+      ]
+    },
+    "Url": {
+      "type": "string"
+    }
+  }
+}

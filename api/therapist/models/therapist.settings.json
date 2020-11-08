@@ -47,6 +47,9 @@
     },
     "TitleAfter": {
       "type": "string"
+    },
+    "Email": {
+      "type": "string"
     }
   }
 }
