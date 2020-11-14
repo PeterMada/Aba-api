@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "external_links",
+  "info": {
+    "name": "ExternalLinks",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

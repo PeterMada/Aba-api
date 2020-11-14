@@ -31,8 +31,7 @@
     "Interest": {
       "type": "enumeration",
       "enum": [
-        "Terapie",
-        "Supervize",
+        "Terapie_Supervize",
         "Jine"
       ]
     },

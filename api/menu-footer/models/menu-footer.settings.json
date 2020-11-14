@@ -2,11 +2,13 @@
   "kind": "singleType",
   "collectionName": "menu_footers",
   "info": {
-    "name": "MenuFooter"
+    "name": "MenuFooter",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "FooterMenu": {
