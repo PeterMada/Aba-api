@@ -15,8 +15,8 @@
       "unique": true
     },
     "news": {
-      "collection": "new",
       "via": "news_tags",
+      "collection": "new",
       "dominant": true
     }
   }

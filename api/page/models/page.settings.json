@@ -40,6 +40,14 @@
     },
     "TitleInMenu": {
       "type": "string"
+    },
+    "MetaKeywords": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "MetaDescription": {
+      "type": "string",
+      "maxLength": 155
     }
   }
 }

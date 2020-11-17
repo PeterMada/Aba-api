@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "news",
   "info": {
-    "name": "New"
+    "name": "New",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "Title": {
@@ -44,8 +46,19 @@
       "required": false
     },
     "news_tags": {
-      "via": "news",
-      "collection": "news-tag"
+      "collection": "news-tag",
+      "via": "news"
+    },
+    "MetaKeywords": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "MetaDescription": {
+      "type": "string",
+      "maxLength": 155
+    },
+    "author": {
+      "model": "therapist"
     }
   }
 }
