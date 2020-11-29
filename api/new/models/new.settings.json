@@ -36,15 +36,6 @@
       "plugin": "upload",
       "required": true
     },
-    "ImgGallery": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": false
-    },
     "news_tags": {
       "collection": "news-tag",
       "via": "news"
