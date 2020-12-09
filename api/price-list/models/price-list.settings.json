@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "price_lists",
+  "info": {
+    "name": "PriceList",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "TextBeforeTable": {
+      "type": "richtext"
+    },
+    "TextAfterTable": {
+      "type": "richtext"
+    },
+    "price_lists": {
+      "collection": "therapist",
+      "via": "price_list",
+      "dominant": true
+    },
+    "PriceTable": {
+      "type": "component",
+      "repeatable": true,
+      "component": "therapist-components.price-table"
+    }
+  }
+}

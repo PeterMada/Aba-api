@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_dynamic_component_price_lists",
+  "info": {
+    "name": "PriceList",
+    "icon": "clipboard-list",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "LeftColumn": {
+      "type": "richtext"
+    },
+    "RightColumn": {
+      "type": "richtext"
+    }
+  }
+}

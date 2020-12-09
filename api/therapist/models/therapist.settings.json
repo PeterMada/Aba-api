@@ -58,6 +58,15 @@
     "MetaDescription": {
       "type": "string",
       "maxLength": 155
+    },
+    "PriceList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "dynamic-component.price-list"
+    },
+    "price_list": {
+      "via": "price_lists",
+      "collection": "price-list"
     }
   }
 }
