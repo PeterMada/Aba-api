@@ -1,14 +1,13 @@
 {
   "kind": "collectionType",
-  "collectionName": "news",
+  "collectionName": "workshops",
   "info": {
-    "name": "Article",
-    "description": ""
+    "name": "Workshop"
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "attributes": {
     "Title": {
@@ -36,9 +35,10 @@
       "plugin": "upload",
       "required": true
     },
-    "news_tags": {
+    "tags": {
       "collection": "news-tag",
-      "via": "news"
+      "via": "workshops",
+      "dominant": true
     },
     "MetaKeywords": {
       "type": "string",

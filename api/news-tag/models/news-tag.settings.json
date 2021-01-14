@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "news_tags",
   "info": {
-    "name": "NewsTag"
+    "name": "Tag",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "Title": {
@@ -18,6 +20,10 @@
       "via": "news_tags",
       "collection": "new",
       "dominant": true
+    },
+    "workshops": {
+      "via": "tags",
+      "collection": "workshop"
     }
   }
 }
