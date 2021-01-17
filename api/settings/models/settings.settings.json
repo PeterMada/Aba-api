@@ -36,6 +36,9 @@
     },
     "WorkshopPage": {
       "model": "page"
+    },
+    "TherapistPage": {
+      "model": "page"
     }
   }
 }

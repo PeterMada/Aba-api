@@ -36,7 +36,7 @@
       "plugin": "upload",
       "required": true
     },
-    "news_tags": {
+    "tags": {
       "collection": "news-tag",
       "via": "news"
     },

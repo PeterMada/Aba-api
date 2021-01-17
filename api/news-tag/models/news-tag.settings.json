@@ -16,14 +16,14 @@
       "required": true,
       "unique": true
     },
-    "news": {
-      "via": "news_tags",
-      "collection": "new",
-      "dominant": true
-    },
     "workshops": {
       "via": "tags",
       "collection": "workshop"
+    },
+    "news": {
+      "via": "tags",
+      "collection": "new",
+      "dominant": true
     }
   }
 }

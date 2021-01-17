@@ -29,11 +29,6 @@
       "default": false,
       "required": true
     },
-    "IsLongList": {
-      "type": "boolean",
-      "default": false,
-      "required": true
-    },
     "ButtonText": {
       "type": "string",
       "required": false
