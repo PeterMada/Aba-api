@@ -30,6 +30,12 @@
     },
     "social_media_sites": {
       "collection": "social-media-site"
+    },
+    "ArticlesPage": {
+      "model": "page"
+    },
+    "WorkshopPage": {
+      "model": "page"
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "collectionName": "components_dynamic_component_dynamic_components",
   "info": {
-    "name": "News/Therapist",
+    "name": "Articles/Workshops/Therapist",
     "icon": "atlas",
     "description": ""
   },
@@ -19,12 +19,12 @@
       "type": "text",
       "maxLength": 400
     },
-    "HasNewsList": {
+    "HasListOfArticles": {
       "type": "boolean",
       "default": true,
       "required": true
     },
-    "HasTherapistList": {
+    "HasListOfTherapist": {
       "type": "boolean",
       "default": false,
       "required": true
@@ -37,6 +37,11 @@
     "ButtonText": {
       "type": "string",
       "required": false
+    },
+    "HasListOfWorkshops": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }
