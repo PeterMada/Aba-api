@@ -1,8 +1,11 @@
 'use strict';
 
 /**
- * Read the documentation (https://strapi.io/documentation/v3.x/concepts/services.html#core-services)
- * to customize this service
+ * `email` service.
  */
 
-module.exports = {};
+module.exports = {
+  // exampleService: (arg1, arg2) => {
+  //   return isUserOnline(arg1, arg2);
+  // }
+};
