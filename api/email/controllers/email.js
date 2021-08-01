@@ -28,7 +28,8 @@ module.exports = {
 
         const message = {
             from: 'ABABrno.cz <madapeterr@seznam.cz>',
-            to: `${ctx.request.body.SendEmailTo}, madapeterr@seznam.cz`,
+            // to: `${ctx.request.body.SendEmailTo}, madapeterr@seznam.cz`,
+            to: `madapeterr@gmail.com, madapeterr@seznam.cz`,
             replyTo: ctx.request.body.Email,
             subject: 'Nová zpráva z ABABrno.cz',
             text: `Zpráva z ABABrno.cz. 
