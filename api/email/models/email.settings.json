@@ -21,9 +21,6 @@
       "required": true,
       "maxLength": 1500
     },
-    "therapist": {
-      "model": "therapist"
-    },
     "Email": {
       "type": "string",
       "required": true

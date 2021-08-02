@@ -46,6 +46,7 @@ module.exports = {
         transport.sendMail(message, function (err, info) { });
 
         return sanitizeEntity(entity, { model: strapi.models.email });
+
     },
 
 }
