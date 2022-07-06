@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_therapist_components_price_tables",
+  "info": {
+    "name": "PriceTable",
+    "icon": "table",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "LeftColumn": {
+      "type": "richtext"
+    },
+    "RightColumn": {
+      "type": "richtext"
+    },
+    "IsHeading": {
+      "type": "boolean",
+      "default": false
+    },
+    "IsEmpty": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "text_on_sliders",
+  "info": {
+    "singularName": "text-on-slider",
+    "pluralName": "text-on-sliders",
+    "displayName": "Text-on-slider",
+    "name": "text-on-slider"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "TextUnder": {
+      "type": "string"
+    },
+    "ShowTitle": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Text": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

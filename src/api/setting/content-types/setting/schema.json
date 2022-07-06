@@ -1,0 +1,53 @@
+{
+  "kind": "singleType",
+  "collectionName": "settings",
+  "info": {
+    "singularName": "setting",
+    "pluralName": "settings",
+    "displayName": "Setting",
+    "name": "setting"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "SiteLogo": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false,
+      "required": true
+    },
+    "SiteName": {
+      "type": "string",
+      "required": true
+    },
+    "Copyright": {
+      "type": "string",
+      "required": true
+    },
+    "social_media_sites": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::social-media-site.social-media-site"
+    },
+    "ArticlesPage": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page"
+    },
+    "WorkshopPage": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page"
+    },
+    "TherapistPage": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page"
+    }
+  }
+}

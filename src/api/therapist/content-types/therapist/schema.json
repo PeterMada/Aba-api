@@ -1,0 +1,77 @@
+{
+  "kind": "collectionType",
+  "collectionName": "therapists",
+  "info": {
+    "singularName": "therapist",
+    "pluralName": "therapists",
+    "displayName": "Therapist",
+    "name": "therapist"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Url": {
+      "type": "uid",
+      "targetField": "Name",
+      "required": true
+    },
+    "Perex": {
+      "type": "text",
+      "required": true
+    },
+    "TherapistImg": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false,
+      "required": true
+    },
+    "TabText": {
+      "type": "component",
+      "repeatable": true,
+      "component": "therapist-components.text-tab"
+    },
+    "social_media_sites": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::social-media-site.social-media-site"
+    },
+    "TitleBefore": {
+      "type": "string"
+    },
+    "TitleAfter": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "string"
+    },
+    "MetaKeywords": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "MetaDescription": {
+      "type": "string",
+      "maxLength": 155
+    },
+    "PriceList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "dynamic-component.price-list"
+    },
+    "price_list": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::price-list.price-list",
+      "mappedBy": "price_lists"
+    }
+  }
+}

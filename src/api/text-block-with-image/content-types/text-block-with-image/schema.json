@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "TextWithImage",
+  "info": {
+    "singularName": "text-block-with-image",
+    "pluralName": "text-block-with-images",
+    "displayName": "Text-block-with-image",
+    "name": "text-block-with-image"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Perex": {
+      "type": "string"
+    },
+    "Img": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false,
+      "required": true
+    },
+    "Text": {
+      "type": "richtext",
+      "required": true
+    },
+    "ButtonText": {
+      "type": "string"
+    },
+    "PageTarget": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page"
+    },
+    "ExternalUrl": {
+      "type": "string"
+    }
+  }
+}

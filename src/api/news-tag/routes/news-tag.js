@@ -1,0 +1,34 @@
+module.exports = {
+  routes: [
+    {
+      method: 'GET',
+      path: '/news-tags',
+      handler: 'news-tag.find',
+      config: { policies: [] }
+    },
+    {
+      method: 'GET',
+      path: '/news-tags/:id',
+      handler: 'news-tag.findOne',
+      config: { policies: [] }
+    },
+    {
+      method: 'POST',
+      path: '/news-tags',
+      handler: 'news-tag.create',
+      config: { policies: [] }
+    },
+    {
+      method: 'PUT',
+      path: '/news-tags/:id',
+      handler: 'news-tag.update',
+      config: { policies: [] }
+    },
+    {
+      method: 'DELETE',
+      path: '/news-tags/:id',
+      handler: 'news-tag.delete',
+      config: { policies: [] }
+    }
+  ]
+}

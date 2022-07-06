@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "social_media_sites",
+  "info": {
+    "singularName": "social-media-site",
+    "pluralName": "social-media-sites",
+    "displayName": "Social-media-site",
+    "name": "social-media-site"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Url": {
+      "type": "string",
+      "required": true
+    },
+    "Logo": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false,
+      "required": true
+    }
+  }
+}

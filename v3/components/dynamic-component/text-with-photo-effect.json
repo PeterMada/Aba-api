@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_dynamic_component_text_with_photo_effects",
+  "info": {
+    "name": "TextWithPhotoEffect",
+    "icon": "photo-video"
+  },
+  "options": {},
+  "attributes": {
+    "text_with_photo_effects": {
+      "collection": "text-with-photo-effect"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "GraphicTitle": {
+      "type": "string"
+    },
+    "TextUnderTitle": {
+      "type": "text"
+    }
+  }
+}

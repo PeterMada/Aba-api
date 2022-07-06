@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "menu_footers",
+  "info": {
+    "singularName": "menu-footer",
+    "pluralName": "menu-footers",
+    "displayName": "Menu-footer",
+    "name": "menu-footer"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "FooterMenu": {
+      "type": "component",
+      "repeatable": true,
+      "component": "footer.footer-menu"
+    }
+  }
+}

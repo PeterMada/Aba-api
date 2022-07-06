@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_dynamic_component_dynamic_components",
+  "info": {
+    "name": "Articles/Workshops/Therapist",
+    "icon": "atlas",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "GraphicTitle": {
+      "type": "string",
+      "required": true
+    },
+    "TextUnderTitle": {
+      "type": "text",
+      "maxLength": 400
+    },
+    "HasListOfArticles": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "HasListOfTherapist": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "ButtonText": {
+      "type": "string",
+      "required": false
+    },
+    "HasListOfWorkshops": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,34 @@
+module.exports = {
+  routes: [
+    {
+      method: 'GET',
+      path: '/text-blocks',
+      handler: 'text-block.find',
+      config: { policies: [] }
+    },
+    {
+      method: 'GET',
+      path: '/text-blocks/:id',
+      handler: 'text-block.findOne',
+      config: { policies: [] }
+    },
+    {
+      method: 'POST',
+      path: '/text-blocks',
+      handler: 'text-block.create',
+      config: { policies: [] }
+    },
+    {
+      method: 'PUT',
+      path: '/text-blocks/:id',
+      handler: 'text-block.update',
+      config: { policies: [] }
+    },
+    {
+      method: 'DELETE',
+      path: '/text-blocks/:id',
+      handler: 'text-block.delete',
+      config: { policies: [] }
+    }
+  ]
+}

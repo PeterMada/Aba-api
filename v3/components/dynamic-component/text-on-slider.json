@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_dynamic_component_text_on_sliders",
+  "info": {
+    "name": "TextOnSlider",
+    "icon": "file-signature"
+  },
+  "options": {},
+  "attributes": {
+    "BackgroundImg": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "text_on_sliders": {
+      "collection": "text-on-slider"
+    }
+  }
+}

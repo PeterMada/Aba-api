@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sliders",
+  "info": {
+    "singularName": "slider",
+    "pluralName": "sliders",
+    "displayName": "Slider",
+    "name": "slider"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "SliderImg": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false,
+      "required": true
+    },
+    "ControlsColor": {
+      "type": "enumeration",
+      "enum": [
+        "White",
+        "Black",
+        "Blue"
+      ],
+      "required": false,
+      "default": "White"
+    },
+    "Text": {
+      "type": "richtext",
+      "required": true
+    },
+    "ButtonText": {
+      "type": "string"
+    },
+    "ExternalUrl": {
+      "type": "string"
+    },
+    "PageTarget": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page"
+    }
+  }
+}

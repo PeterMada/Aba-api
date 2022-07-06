@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "text_on_images",
+  "info": {
+    "singularName": "text-on-image",
+    "pluralName": "text-on-images",
+    "displayName": "Text-on-image",
+    "name": "text-on-image"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Perex": {
+      "type": "text"
+    },
+    "BackgroundImg": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false,
+      "required": true
+    },
+    "Text": {
+      "type": "richtext"
+    },
+    "PageTarget": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page"
+    },
+    "ButtonText": {
+      "type": "string"
+    },
+    "ExternalUrl": {
+      "type": "string"
+    }
+  }
+}

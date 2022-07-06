@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "workshops",
+  "info": {
+    "singularName": "workshop",
+    "pluralName": "workshops",
+    "displayName": "Workshop",
+    "name": "workshop"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Url": {
+      "type": "uid",
+      "targetField": "Title",
+      "required": true
+    },
+    "Perex": {
+      "type": "text"
+    },
+    "Text": {
+      "type": "richtext",
+      "required": true
+    },
+    "MainImage": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false,
+      "required": true
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::news-tag.news-tag",
+      "inversedBy": "workshops"
+    },
+    "MetaKeywords": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "MetaDescription": {
+      "type": "string",
+      "maxLength": 155
+    },
+    "author": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::therapist.therapist"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+module.exports = {
+  routes: [
+    {
+      method: 'GET',
+      path: '/sliders',
+      handler: 'slider.find',
+      config: { policies: [] }
+    },
+    {
+      method: 'GET',
+      path: '/sliders/:id',
+      handler: 'slider.findOne',
+      config: { policies: [] }
+    },
+    {
+      method: 'POST',
+      path: '/sliders',
+      handler: 'slider.create',
+      config: { policies: [] }
+    },
+    {
+      method: 'PUT',
+      path: '/sliders/:id',
+      handler: 'slider.update',
+      config: { policies: [] }
+    },
+    {
+      method: 'DELETE',
+      path: '/sliders/:id',
+      handler: 'slider.delete',
+      config: { policies: [] }
+    }
+  ]
+}

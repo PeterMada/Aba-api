@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "price_lists",
+  "info": {
+    "singularName": "price-list",
+    "pluralName": "price-lists",
+    "displayName": "Price-list",
+    "name": "price-list"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "TextBeforeTable": {
+      "type": "richtext"
+    },
+    "TextAfterTable": {
+      "type": "richtext"
+    },
+    "price_lists": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::therapist.therapist",
+      "mappedBy": "price_list"
+    },
+    "PriceTable": {
+      "type": "component",
+      "repeatable": true,
+      "component": "therapist-components.price-table"
+    }
+  }
+}

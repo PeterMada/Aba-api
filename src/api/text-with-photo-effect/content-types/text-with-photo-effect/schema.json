@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "text_with_photo_effects",
+  "info": {
+    "singularName": "text-with-photo-effect",
+    "pluralName": "text-with-photo-effects",
+    "displayName": "Text-with-photo-effect",
+    "name": "text-with-photo-effect"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 300
+    },
+    "Photo": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false,
+      "required": true
+    },
+    "Text": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

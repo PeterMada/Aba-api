@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_dynamic_component_small_img_banner_with_texts",
+  "info": {
+    "name": "SmallImgBannerWithText",
+    "icon": "closed-captioning"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Text": {
+      "type": "string",
+      "required": false
+    },
+    "Img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

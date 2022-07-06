@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "text_blocks",
+  "info": {
+    "singularName": "text-block",
+    "pluralName": "text-blocks",
+    "displayName": "Text-block",
+    "name": "text-block"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Perex": {
+      "type": "text"
+    },
+    "Text": {
+      "type": "richtext",
+      "required": true
+    },
+    "ButtonText": {
+      "type": "string"
+    },
+    "ExternalUrl": {
+      "type": "string"
+    },
+    "PageTarget": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page"
+    },
+    "BackgroundColor": {
+      "type": "string",
+      "default": "#FFFFFF",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
+    }
+  }
+}
