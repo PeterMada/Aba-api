@@ -9,24 +9,24 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "dependencies": {
+    "graphql": "^15.5.0",
     "knex": ">=0.15.0 <0.22.0",
     "nodemailer": "^6.6.3",
     "pg": "^8.4.0",
     "pg-connection-string": "^2.4.0",
     "sqlite3": "5.0.0",
-    "strapi": "3.6.5",
-    "strapi-admin": "3.6.5",
-    "strapi-connector-bookshelf": "3.6.5",
-    "strapi-plugin-content-manager": "3.6.5",
-    "strapi-plugin-content-type-builder": "3.6.5",
-    "strapi-plugin-email": "3.6.5",
-    "strapi-plugin-graphql": "3.6.5",
-    "strapi-plugin-upload": "3.6.5",
-    "strapi-plugin-users-permissions": "3.6.5",
+    "strapi": "3.6.9",
+    "strapi-admin": "3.6.9",
+    "strapi-connector-bookshelf": "3.6.9",
+    "strapi-plugin-content-manager": "3.6.9",
+    "strapi-plugin-content-type-builder": "3.6.9",
+    "strapi-plugin-email": "3.6.9",
+    "strapi-plugin-graphql": "3.6.9",
+    "strapi-plugin-upload": "3.6.9",
+    "strapi-plugin-users-permissions": "3.6.9",
     "strapi-provider-upload-cloudinary": "^3.6.5",
-    "strapi-utils": "3.6.5"
+    "strapi-utils": "3.6.9"
   },
   "author": {
     "name": "Peter Mada"
